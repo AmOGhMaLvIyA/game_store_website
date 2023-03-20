@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPH4 Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">Wanna Be Gamer</a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#">My Favourites</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+        <div class="searchbox">
+            <a href="#"><i class='bx bx-search bx-tada' ></i></a>
+            <input type="text" placeholder="Search here....">
+        </div>
+        <div class="toggle-menu"></box-icon></div>
+    </header>
+
+
+    <section class="bann">
+        <div class="bg">
+            
+            <div class="content">
+                <h2>It's my love <br>
+                    for the games</h2>
+                    <br>
+                    
+                    <p>Dive into the world of exciting stories into the games to fight god or race to be a victor . Don't wake up to reality</p>
+                    <br>
+                    <a href="#games" class="button">See my Games</a>
+                    
+            </div>
+            <img align="right" src="cut1.png" alt="">
+            
+            <p class="border"></p>
+        </div>  
+    </section>
+    
+    <!-- about body -->
+    
+    <section id="about">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_2t/9810.jpg" alt="">
+        
+        <div class="contentbx">
+            <h2>About It</h2><br>
+            <br>
+            <p>Here you will find the details of all the games I have which are widely categorized on the basis of 
+                my favourites ones , the ones I play the least and different genre categories and you will also be able to find the details of those game as well . </p>
+                <br>
+                <br>
+                <a href="#" class="read"><h3>Read More</h3></a>
+        </div>
+            
+        
+        <video class="myvid" muted loop autoplay>
+            <source src="awp1.mp4" type="video/mp4"> 
+        </video>
+    </section>
+
+
+    <section id="games">
+        <h2>My Games</h2>
+        <ul>
+            <li class="list active" data-filter="Online Multiplayer">Online Multiplayer</li>
+            <li class="list" data-filter="Story Games">Story Games</li>
+            <li class="list" data-filter="Sports">Sports</li>
+        </ul>
+        <div class="cardbox">
+            <div class="card" data-items="multiplayer">
+                <img src="csgo.jpeg" alt="">
+                <div class="content">
+                    <h4>CSGO</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Price : Free</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-items="Multiplayer">
+                
+                    <img src="valo.webp"alt="">
+                    <div class="content">
+                        <h4>Valorant</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price : Free</p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="card" data-items="multiplayer">
+                
+                        <img src="dota.jpeg" alt=""> 
+                        <div class="content">
+                            <h4>DOTA 2 </h4>
+                            <div class="progress-line"><span></span></div>
+                            <div class="info">
+                                <p>Price : Free</p>
+                                <a href="#">Play Now</a>
+                            </div>
+                        </div>
+            
+            </div>
+            <div class="card" data-items="multiplayer">
+                
+                <img src="fortnite.jpeg" alt="">
+                <div class="content">
+                    <h4>Fortnite</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Price : Free</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-items="multiplayer">
+                
+                <img src="apex.jpeg" alt="">
+                <div class="content">
+                    <h4>Apex Legends</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Price : Free</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-items="multiplayer">
+                
+                <img src="fifa.jpeg" alt="">
+                <div class="content">
+                    <h4>FIFA 23</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Price : $ 69.99</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-items="Story Games">
+                
+                <img src="gow4.jpeg" alt="">
+                <div class="content">
+                    <h4>God Of War</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Price : Rs 899</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-items="Story Games">
+                
+                <img src="gta5.jpeg" alt="">
+                <div class="content">
+                    <h4>Grand Theft Auto V</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Price : Rs 1499</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // sticky naavbar
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+        // addEventListener - used to add or connect various defined function to be useful to perform them on webpage 
+        // queryslector-returns the first method that matches the given specific condition 
+        // QSall - to return all matching elements
+        // filterable button
+        // let allows us to declare var. that are limited to the scope of a limited block of statement
+        let list= document.querySelectorAll('.list');
+        let card=document.querySelectorAll('.card');
+        for(let i=0;i<list.length;i++){
+            list[i].addEventListener.remove('active');
+        }
+        // this - is a keyword targeting to a specific Object
+        // classList - returns css class names of an element  
+        this.classList.add('active');
+        let datafilter = this.getAttribute('data-filter');
+        for(let i=0 ;i<card.length;i++){
+            card[i].classList.remove('active');
+            card[i].classList.add('hide');
+
+            if(card[i].getAttribute('data-item') == datafilter || datafilter =='all'){
+                card[i].classList.remove('hide');
+                card[i].classList.add('active');
+            }
+        }
+
+    </script>
+      
+</body>
+</html>

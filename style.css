@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   
+}
+body{
+    background: #050e2d;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+  
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #c2d2e4;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #0a4b95;
+  }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 7px 100px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a4b9530;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.sticky{
+    background: #1aefefac;
+    box-shadow: 0 5p 20px #2f4c56;
+}
+header .logo{
+    position: relative;
+    color:#fff ;
+    text-decoration:none;
+    font-size: 2.1em;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin: 10px;
+    font-family: cursive ;
+}
+header ul li a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: cursive;
+}
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef ;
+    font-style: italic;
+}
+header .searchbox{
+    padding: 5px;
+    
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+
+}
+header .searchbox i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+
+}
+
+header .searchbox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+    font-style: italic;
+}
+
+/* obito photo */
+
+.bann{
+    
+    /* background-size: 1 750px;
+    background-repeat: no-repeat; */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+}
+.bann .bg .border{
+     border: 2px solid #050e2d;
+  border-radius: 12px;
+  padding: 5px;
+}
+.bann .bg img{
+    
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    weight: 500;
+    margin-top: 115px;
+    margin-left: 60px;
+}
+.bann p.hidden{
+    border-style: hidden;
+    border-radius: 5px;
+    border-left: 6px solid #1aeeef;
+    background: #dcefef;
+}
+.bann .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.bann .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.bann .bg .content h2{
+    font-size: 4.5em;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 15%;
+}
+.bann .bg .content p{
+    font-size: 2em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+
+}
+
+.bann .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.bann .bg .content a:hover{
+    background: #1aeeef;
+    border: none;
+    color:#050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    font-style: oblique;
+}
+.bann .bg .gow{
+    width: 100%;
+    height: 500px;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* about styling  */
+
+#about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./awp1.mp4');
+    overflow: hidden;
+}
+
+#about .contentbx{
+    
+    width: 50%;
+    margin-left: 100px;
+}
+
+#about .contentbx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color:#fff;
+}
+#about .contentbx p{
+    font-size: 1.7em;
+    max-width: 600px;
+    text-align: justify;
+    color: #dbd9d9;
+}
+#about .contentbx .read{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#about .contentbx .read:hover{
+    background: #1aeeef;
+    border: none;
+    color:#050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    font-style: oblique;
+}
+#about .myvid{
+    /* background: #050e2d;  */
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 99%; */
+    /* object-fit: cover; */
+    opacity: 0.15;
+    /* color: #050e2d; */
+    z-index: -1;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b308e0c;
+    mix-blend-mode: overlay;
+}
+#about img{
+    filter: brightness(100%);
+    width: 60%;
+    height: 65%;
+    border-radius: 25px;
+    border: 2px solid #fff;
+}
+
+#games{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+#games h2{
+    color: #fff;
+    margin:10px 0;
+    margin-top: 100px;
+
+}
+
+#games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+#games ul li.active{
+    background: #1aeeef;
+    color: #344897;
+    box-shadow: 0 0 10px #1aeeef;
+}
+#games .cardbox{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+#games .cardbox .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #1b2141;
+    overflow: hidden;
+}
+#games .cardbox .card img{
+    min-height: 250px;
+    max-height: 251px;
+    object-fit: cover;
+    width: 100%;
+}
+#games .cardbox .card .content{
+    padding: 10px;
+
+}
+#games .cardbox .card .content h4{
+    color: #fff;
+    margin: 15px 0;
+}
+#games .cardbox .card .content .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+#games .cardbox .card .content .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aeeef;
+    box-shadow: 0 0 10px #1aeeef;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    animation-iteration-count: 2 ;
+}
+    
+@keyframes animate{
+    100%{
+        transform: scaleX(1);    
+    }
+}
+
+#games .cardbox .card .info{
+    border-top: 2px solid #35407e;
+    padding: 5px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+#games .cardbox .card .info p{
+    font-size: 1em;
+    color:#fff;   
+}
+#games .cardbox .card .info p span{
+    color: #1aeeef;
+}
+#games .cardbox .card .info a{
+    
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px 0;
+        border: 1px solid #1aeeef;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 5px;
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+#games .cardbox .card .info a:hover{
+        background: #1aeeef;
+        border: none;
+        color:#050e2d;
+        box-shadow: 0 0 10px #1aeeef;
+        font-style: oblique;
+    }
+#games .cardbox .card
+ 
+
